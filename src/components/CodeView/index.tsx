@@ -102,7 +102,9 @@ export const CodeViewBase = ({
                       colSpan={2}
                     >
                       {linterMessagesByLine[line].map((msg) => {
-                        return <LinterMessage key={msg.uid} message={msg} />;
+                        return (
+                          <LinterMessage key={msg.uid} message={msg} inline />
+                        );
                       })}
                     </td>
                   </tr>

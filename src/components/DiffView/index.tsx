@@ -135,7 +135,7 @@ export class DiffViewBase extends React.Component<Props> {
         widget = (
           <div className={styles.inlineLinterMessages}>
             {messages.map((msg) => {
-              return <LinterMessage key={msg.uid} message={msg} />;
+              return <LinterMessage key={msg.uid} message={msg} inline />;
             })}
           </div>
         );
